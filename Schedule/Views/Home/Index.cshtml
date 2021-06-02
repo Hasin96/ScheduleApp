@@ -1,0 +1,259 @@
+﻿@model IEnumerable<TasksViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section name="tasks" class="pl-16 bg-gray-lightest h-full w-168">
+    <h1 class="text-lg text-gray-dark pb-16 pt-16">Today's schedule</h1>
+    <ul>
+        @foreach (var task in Model)
+        {
+            @*<li> @task.Title </li>
+            <li> @task.IconHTML </li>*@
+            // get the html from server into viewmodel
+        }
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white border-l-4 border-primary-light hover:cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-light">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-light">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-light">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-light">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-light">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-light text-primary-light">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="w-7 h-8 svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-light js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-light">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-primary-darkest transform scale-105 transition duration-300 ease-in-out shadow-xl">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-primary-darkest text-primary-darkest">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" class="motion-safe:animate-spin w-7 h-8 svg-inline--fa fa-spinner fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="text-primary-darkest js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub text-primary-darkest">
+                    08:00 - 09:30 (2m left)
+                </span>
+            </div>
+        </li>
+        <li tabindex="1" class="flex h-28 w-136 mb-10 bg-white hover:cursor-pointer border-l-4 border-gray">
+            <div class="flex-fixed flex flex-row justify-center items-center hover:cursor-pointer">
+                <div tabindex="2" class="bg-gray-lightest flex justify-center w-16 h-16 rounded-full js-card-icon-container items-center border-2 border-gray">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="grip-lines" class="w-7 h-8 svg-inline--fa fa-grip-lines fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M496 288H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-128H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"></path></svg>
+                </div>
+            </div>
+            <div class="flex-fluid flex flex-col justify-center">
+                <span class="js-card-header">
+                    Reading
+                </span>
+                <span class="text-sm js-card-sub">
+                    08:00 - 09:30 (30m)
+                </span>
+            </div>
+        </li>
+    </ul>
+
+
+</section>
+
+@section scripts {
+
+    <script type="text/javascript">
+
+        //document.addEventListener("DOMContentLoaded", function (event) {
+
+        //    var scheduleElements = document.querySelectorAll('[name=tasks] ul li');
+        //    scheduleElements.forEach(function (elem) {
+
+        //        elem.addEventListener("click", function () {
+
+        //            if (this.classList.contains("bg-primary-darkest") == false) {
+        //                document.querySelectorAll('[name=tasks] ul li')
+        //                    .forEach(function (li) {
+        //                        if (li.classList.contains("bg-primary-darkest"))
+        //                            toggleCardSelected(li);
+        //                    })
+        //            }
+
+        //            this.classList.toggle('bg-primary-lightest');
+
+        //            var cardIconContainer = this.querySelector(".js-card-icon-container");
+        //            cardIconContainer.classList.toggle('bg-primary-lighter');
+
+        //            var cardIcon = cardIconContainer.querySelector(".js-card-icon");
+        //            cardIcon.classList.toggle('text-primary-light');
+
+        //            var cardHeader = this.querySelector(".js-card-header");
+        //            cardHeader.classList.toggle("text-primary-darkest");
+
+        //            var cardSub = this.querySelector(".js-card-sub");
+        //            cardSub.classList.toggle("text-primary");
+
+        //            var cardArrow = this.querySelector(".js-card-arrow");
+        //            cardArrow.classList.toggle("text-primary-light");
+
+        //            toggleCardSelected(this);
+
+        //        });
+
+        //        elem.addEventListener("mouseover", function () {
+
+        //            if (this.classList.contains('bg-primary-darkest'))
+        //                return;
+
+        //            console.log("continueing over")
+
+        //            this.classList.add('bg-primary-lightest');
+
+        //            var cardIconContainer = this.querySelector(".js-card-icon-container");
+        //            cardIconContainer.classList.add('bg-primary-lighter');
+
+        //            var cardIcon = cardIconContainer.querySelector(".js-card-icon");
+        //            cardIcon.classList.add('text-primary-light');
+
+        //            var cardHeader = this.querySelector(".js-card-header");
+        //            cardHeader.classList.add("text-primary-darkest");
+
+        //            var cardSub = this.querySelector(".js-card-sub");
+        //            cardSub.classList.add("text-primary");
+
+        //            var cardArrow = this.querySelector(".js-card-arrow");
+        //            cardArrow.classList.add("text-primary-light");
+        //        });
+
+        //        elem.addEventListener("mouseleave", function () {
+
+        //            if (this.classList.contains('bg-primary-darkest'))
+        //                return;
+
+        //            console.log("continueing leave")
+
+        //            this.classList.remove('bg-primary-lightest');
+
+        //            var cardIconContainer = this.querySelector(".js-card-icon-container");
+        //            cardIconContainer.classList.remove('bg-primary-lighter');
+
+        //            var cardIcon = cardIconContainer.querySelector(".js-card-icon");
+        //            cardIcon.classList.remove('text-primary-light');
+
+        //            var cardHeader = this.querySelector(".js-card-header");
+        //            cardHeader.classList.remove("text-primary-darkest");
+
+        //            var cardSub = this.querySelector(".js-card-sub");
+        //            cardSub.classList.remove("text-primary");
+
+        //            var cardArrow = this.querySelector(".js-card-arrow");
+        //            cardArrow.classList.remove("text-primary-light");
+        //        });
+        //    });
+
+        //    function toggleCardSelected(target) {
+        //        target.classList.toggle('bg-primary-darkest');
+
+        //        var cardIconContainer = target.querySelector(".js-card-icon-container");
+        //        cardIconContainer.classList.toggle('bg-primary-dark');
+
+        //        var cardIcon = cardIconContainer.querySelector(".js-card-icon");
+        //        cardIcon.classList.toggle('text-primary-lightest');
+
+        //        var cardHeader = target.querySelector(".js-card-header");
+        //        cardHeader.classList.toggle("text-primary-lightest");
+
+        //        var cardSub = target.querySelector(".js-card-sub");
+        //        cardSub.classList.toggle("text-primary-lightest");
+
+        //        var cardArrow = target.querySelector(".js-card-arrow");
+        //        cardArrow.classList.toggle("text-primary-lightest");
+        //        cardArrow.classList.toggle("-rotate-180");
+        //    }
+
+        //}); 
+        
+
+
+
+    </script>
+
+}
+
